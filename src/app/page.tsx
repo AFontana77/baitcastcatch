@@ -5,12 +5,12 @@ import { Database, BookOpen, BarChart3, Star, ArrowRight, Download, CheckCircle 
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "FishLog — Search 43 fish species with size limits and regulations",
-  description: "FishLog has 43 fish species from FishBase and NOAA with size limits, habitat, and state regulation links. Log your catches, track your best fish, and build a record book worth keeping.",
+  title: "FishLog — Search 375 fish species with size limits and regulations",
+  description: "FishLog has 375 fish species from FishBase and NOAA with size limits, habitat, and state regulation links. Log your catches, track your best fish, and build a record book worth keeping.",
 };
 
 const FEATURES = [
-  { icon: Database, title: "Species database", body: "43 fish species with habitat, size limits, and regulation links." },
+  { icon: Database, title: "Species database", body: "375 fish species with habitat, size limits, and regulation links." },
   { icon: BookOpen, title: "Catch log", body: "Log species, weight, length, location, and time. Add a photo. Rate the fight." },
   { icon: BarChart3, title: "Personal records", body: "Your biggest fish by species — updated every time you log a new catch." },
   { icon: Star, title: "GPS location", body: "Pin exact spots. See your catch history on a map." },
@@ -26,10 +26,10 @@ export default function HomePage() {
         <section className="py-20 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto text-center">
             <span className="inline-block text-xs font-semibold uppercase tracking-widest text-blue-700 bg-blue-50 px-3 py-1 rounded-full mb-6">
-              Search 43 fish species. Log your own.
+              Search 375 fish species. Log your own.
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Search 43 fish species with size limits and regulations.
+              Search 375 fish species with size limits and regulations.
               <br />
               <span className="text-blue-800">Log your catches.</span>
             </h1>
@@ -45,7 +45,7 @@ export default function HomePage() {
               </Link>
             </div>
             <p className="mt-4 text-sm text-gray-400">
-              Free app. No credit card. 43 fish species from FishBase + NOAA.
+              Free app. No credit card. 375 fish species from FishBase + NOAA.
             </p>
           </div>
         </section>
@@ -57,7 +57,7 @@ export default function HomePage() {
               The database IS the app.
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-              Most log apps give you a blank screen. FishLog gives you 43 fish species from FishBase + NOAA — searchable, organized, and ready to use. Log what you do. Build your personal collection alongside the reference library.
+              Most log apps give you a blank screen. FishLog gives you 375 fish species from FishBase + NOAA — searchable, organized, and ready to use. Log what you do. Build your personal collection alongside the reference library.
             </p>
             <div className="grid sm:grid-cols-2 gap-6 text-left">
               {FEATURES.map(({ icon: Icon, title, body }) => (

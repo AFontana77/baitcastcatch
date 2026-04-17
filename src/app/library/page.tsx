@@ -5,7 +5,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "FishLog Library — 43 fish species",
+  title: "FishLog Library — 375 Fish Species",
   description: "Species data from FishBase and NOAA — habitat, typical size ranges, and state regulation links for US waters. Browse the FishLog reference database — available in the free app.",
 };
 
@@ -32,7 +32,7 @@ export default function LibraryPage() {
               FishLog Library
             </h1>
             <p className="text-gray-600 text-lg max-w-xl mx-auto leading-relaxed">
-              43 fish species from FishBase + NOAA. Species data from FishBase and NOAA — habitat, typical size ranges, and state regulation links for US waters.
+              375 fish species from FishBase + NOAA. Species data from FishBase and NOAA — habitat, typical size ranges, and state regulation links for US waters.
             </p>
             <div className="mt-6 inline-flex items-center gap-2 text-sm text-blue-800 bg-blue-50 px-4 py-2 rounded-full">
               <Search size={14} /> Full search available in the free app
@@ -64,7 +64,7 @@ export default function LibraryPage() {
               Search the full database in the app.
             </h2>
             <p className="text-gray-600 mb-6">
-              The FishLog app has the complete 43 fish species with full-text search, filters, and your personal log — all free.
+              The FishLog app has the complete 375 fish species with full-text search, filters, and your personal log — all free.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer"
