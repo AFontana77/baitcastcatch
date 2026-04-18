@@ -19,6 +19,25 @@ const FEATURES = [
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "FishLog",
+            "applicationCategory": "LifestyleApplication",
+            "operatingSystem": "iOS, Android",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "description": "Search 375+ fish species with size limits and regulations. Log your catches, track personal records, and build a catch history worth keeping.",
+            "url": "https://www.baitcastcatch.com"
+          })
+        }}
+      />
       <SiteNav />
       <main id="main-content" className="pt-20">
 

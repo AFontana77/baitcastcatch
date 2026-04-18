@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "About FishLog",
-  description: "The story behind FishLog. Search 43 fish species with size limits and regulations. Log your catches. Build your fishing log.",
+  description: "The story behind FishLog. Search 375+ fish species with size limits and regulations. Log your catches. Build your fishing log.",
 };
 
 export default function AboutPage() {
