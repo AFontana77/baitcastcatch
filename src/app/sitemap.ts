@@ -41,6 +41,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
+  const speciesGuideUrls: MetadataRoute.Sitemap = [
+    { url: `${BASE}/largemouth-bass`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/smallmouth-bass`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/striped-bass`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/crappie-fishing`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/trout-fishing`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/walleye-fishing`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+  ];
+
   return [
     { url: BASE, lastModified: now, changeFrequency: 'weekly', priority: 1 },
     { url: `${BASE}/library`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
@@ -50,6 +59,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE}/privacy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${BASE}/terms`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${BASE}/support`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
+    ...speciesGuideUrls,
     ...licenseUrls,
     ...categoryUrls,
     ...itemUrls,
