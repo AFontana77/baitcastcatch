@@ -59,7 +59,7 @@ export default function LargemouthBassPage() {
               Largemouth Bass
             </h1>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
-              The most popular gamefish in the US. Found in almost every state. Hard to resist once you catch your first one. Here is what you need to know.
+              Largemouth bass are in almost every lake and pond in the country. This guide covers where they hold, when they feed, and what to throw in each season — so you spend less time guessing and more time fighting fish.
             </p>
           </div>
         </section>
@@ -67,7 +67,7 @@ export default function LargemouthBassPage() {
         {/* Species Profile */}
         <section aria-label="Species profile" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Species Profile</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Know Your Target Before You Cast</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               The largemouth bass (<em>Micropterus salmoides</em>) is native to eastern North America. It has been stocked in nearly every US state, plus dozens of countries around the world. Few fish have spread as far or as fast.
             </p>
@@ -93,7 +93,7 @@ export default function LargemouthBassPage() {
         {/* World Record */}
         <section aria-label="World record" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">The World Record</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">The Benchmark: 22 Lbs 4 Oz Since 1932</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               George Perry caught a largemouth bass weighing 22 lbs 4 oz on June 2, 1932, at Montgomery Lake in Georgia. The record stood alone for 77 years.
             </p>
@@ -109,7 +109,7 @@ export default function LargemouthBassPage() {
         {/* Habitat */}
         <section aria-label="Habitat and water preferences" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Habitat and Water Preferences</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Where Bass Hold — and Why Cover Always Wins</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Largemouth bass love warm, shallow water. Their sweet spot is 65-75 degrees F. They tolerate water much warmer than trout or smallmouth can handle, which is why they thrive in southern ponds and reservoirs.
             </p>
@@ -132,7 +132,7 @@ export default function LargemouthBassPage() {
         {/* Seasonal Patterns */}
         <section aria-label="Seasonal fishing patterns" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Seasonal Patterns</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Fish the Right Spot by Season</h2>
 
             <div className="space-y-8">
               <div>
@@ -178,7 +178,7 @@ export default function LargemouthBassPage() {
         {/* Best Baits by Season */}
         <section aria-label="Best baits and lures by season" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Best Baits by Season</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Match the Bait to the Season</h2>
             <div className="grid sm:grid-cols-2 gap-5">
               <div className="bg-gray-50 rounded-xl p-5 border border-gray-100">
                 <h3 className="font-bold text-gray-900 mb-3">Spring</h3>
@@ -223,7 +223,7 @@ export default function LargemouthBassPage() {
         {/* Regulations */}
         <section aria-label="Size and catch regulations" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Size Limits and Regulations</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Fish Legal: Check Before You Launch</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Most states set a minimum size of 12-15 inches for largemouth bass. Daily bag limits typically run 5-10 fish. Some trophy fisheries protect big fish with slot limits, where you can only keep fish below a certain size, not above it.
             </p>
@@ -237,10 +237,10 @@ export default function LargemouthBassPage() {
         <section aria-label="App download call to action" className="py-14 px-4 bg-white">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Log your next largemouth in BaitCastCatch.
+              The anglers who catch the most fish have one thing in common.
             </h2>
             <p className="text-gray-600 mb-6">
-              Record the date, water temp, lure, and size. Over time you will see exactly what works on your favorite water. Free download, no subscription.
+              They know what worked last time. Log the date, water temp, lure, and strike location in BaitCastCatch. After one season of data, you know exactly which spots and presentations produce on your water — and you stop fishing blind. Free download, no subscription.
             </p>
             <Link
               href="/free-download"

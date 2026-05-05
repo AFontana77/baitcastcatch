@@ -59,7 +59,7 @@ export default function StripedBassPage() {
               Striped Bass
             </h1>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
-              Striped bass live two very different lives. Coastal fish run rivers each spring, travel hundreds of miles, and grow to 50 lbs. Landlocked fish stay in reservoirs and feed on shad year-round. Both are worth chasing.
+              Striped bass exist in two very different worlds. Coastal fish migrate hundreds of miles through tidal rivers each spring. Landlocked fish pack into reservoirs and chase shad year-round. This guide explains both — so you know where to find them and how to fish them wherever you are.
             </p>
           </div>
         </section>
@@ -67,7 +67,7 @@ export default function StripedBassPage() {
         {/* Species Profile */}
         <section aria-label="Species profile and identification" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Species Profile</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Know Your Target Before You Cast</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Striped bass (<em>Morone saxatilis</em>) have a bright silver body crossed by 7-8 bold dark horizontal stripes. The stripes run from behind the gill plate straight to the tail. You cannot miss them.
             </p>
@@ -83,7 +83,7 @@ export default function StripedBassPage() {
         {/* Two Populations */}
         <section aria-label="Coastal and landlocked populations" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Two Very Different Populations</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Two Populations, Two Completely Different Approaches</h2>
 
             <div className="space-y-8">
               <div>
@@ -121,7 +121,7 @@ export default function StripedBassPage() {
         {/* World Record */}
         <section aria-label="World record striper" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">The World Record</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">The Benchmark: 81 Lbs 14 Oz from Shore in 2011</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Gregory Myerson caught an 81 lb 14 oz striped bass from Long Island Sound in Connecticut on August 4, 2011. He was fishing from shore, which makes the record even more remarkable. Shore-caught fish this large are almost unheard of.
             </p>
@@ -137,7 +137,7 @@ export default function StripedBassPage() {
         {/* Fishing Techniques */}
         <section aria-label="Best fishing techniques for striped bass" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Best Fishing Techniques</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Match the Method to Where Your Fish Are</h2>
             <div className="space-y-6">
               <div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Live Bait for Coastal Stripers</h3>
@@ -170,7 +170,7 @@ export default function StripedBassPage() {
         {/* Spring Runs */}
         <section aria-label="Spring river runs and timing" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Spring River Runs</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Time the Spring Run Right — Fish Stack Up Fast</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               The striped bass spring run is one of the most anticipated fishing events in the Northeast each year. Starting in March, fish leave the ocean and move into tidal rivers to spawn. The Hudson River run peaks in April and May. The Connecticut River, Delaware River, and Chesapeake Bay tributaries all have significant runs.
             </p>
@@ -186,7 +186,7 @@ export default function StripedBassPage() {
         {/* Regulations */}
         <section aria-label="Size limits and conservation" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Size Limits and Conservation</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Fish Legal: Slot Limits Change — Check Before You Launch</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Coastal striped bass are managed by the Atlantic States Marine Fisheries Commission. Most states along the Atlantic Coast now use slot limits, where only fish within a specific size range may be kept. In many states the slot is around 28-35 inches, though this changes regularly based on stock assessments.
             </p>
@@ -203,10 +203,10 @@ export default function StripedBassPage() {
         <section aria-label="App download call to action" className="py-14 px-4 bg-white">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Log your striper catches in BaitCastCatch.
+              Striper fishing is about timing. Log the details so you nail it next season.
             </h2>
             <p className="text-gray-600 mb-6">
-              Record size, location, bait, and water conditions for every fish. Build a personal record of what works on your striper water. Free download, no subscription.
+              Record size, location, bait, tide phase, and water temp for every fish in BaitCastCatch. After one season of entries you stop guessing when the run peaks and what the fish are eating — and every trip to your striper water becomes productive instead of a hope. Free download, no subscription.
             </p>
             <Link
               href="/free-download"

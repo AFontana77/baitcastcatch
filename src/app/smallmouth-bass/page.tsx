@@ -59,7 +59,7 @@ export default function SmallmouthBassPage() {
               Smallmouth Bass
             </h1>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
-              Pound for pound, smallmouth bass fight harder than almost any freshwater fish. They live in cold, clear water, eat crayfish, and pull drag in a way largemouth just cannot match.
+              Smallmouth bass live in cold, clear water and fight harder per pound than almost anything in freshwater. This guide covers where they hold, how to read their seasonal behavior, and which techniques produce — so you can target them with a plan instead of guessing.
             </p>
           </div>
         </section>
@@ -67,7 +67,7 @@ export default function SmallmouthBassPage() {
         {/* Species Profile */}
         <section aria-label="Species profile and identification" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Species Profile</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Know Your Target Before You Cast</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               The smallmouth bass (<em>Micropterus dolomieu</em>) is brown to olive-brown with 8-12 dark vertical bars running down its sides. This bar pattern is the key visual difference from the largemouth, which shows a horizontal stripe instead.
             </p>
@@ -93,7 +93,7 @@ export default function SmallmouthBassPage() {
         {/* World Record */}
         <section aria-label="World record and trophy fish" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">The World Record</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">The Benchmark: 11 Lbs 15 Oz Since 1955</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               David Hayes caught a smallmouth bass weighing 11 lbs 15 oz on July 9, 1955, at Dale Hollow Lake on the Kentucky and Tennessee border. The record has held for over 70 years.
             </p>
@@ -109,7 +109,7 @@ export default function SmallmouthBassPage() {
         {/* Habitat */}
         <section aria-label="Habitat and water quality requirements" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Habitat: Where Smallmouth Live</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Find Clean, Cold Water — Find Smallmouth</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Smallmouth bass require cleaner, cooler water than largemouth. Their preferred range is 65-72 degrees F. Where largemouth can tolerate murky, warm conditions, smallmouth cannot. This makes them a water quality indicator species, meaning their presence tells you the water is clean and cold.
             </p>
@@ -135,7 +135,7 @@ export default function SmallmouthBassPage() {
         {/* Seasonal Patterns */}
         <section aria-label="Seasonal behavior and timing" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Seasonal Patterns</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Fish the Right Spot by Season</h2>
             <div className="space-y-6">
               <div>
                 <h3 className="text-lg font-bold text-blue-800 mb-2">Spring Spawn</h3>
@@ -168,7 +168,7 @@ export default function SmallmouthBassPage() {
         {/* Best Techniques */}
         <section aria-label="Fishing techniques and lure selection" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Techniques That Catch Smallmouth</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Present the Right Bait and Land More Fish</h2>
             <div className="space-y-6">
               <div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Tube Jig on Rocky Bottom</h3>
@@ -208,10 +208,10 @@ export default function SmallmouthBassPage() {
         <section aria-label="App download call to action" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Track your catches in BaitCastCatch.
+              Smallmouth patterns take time to learn. Log them as you go.
             </h2>
             <p className="text-gray-600 mb-6">
-              Log water temp, lure, depth, and time of day. Over a season you will know exactly what your smallmouth water responds to. Free download, no subscription.
+              Record water temp, depth, lure, and time of day in BaitCastCatch after each trip. Over a season you build a clear picture of what your water responds to — so next time you arrive at that river bend or rocky point, you already know what to throw. Free download, no subscription.
             </p>
             <Link
               href="/free-download"

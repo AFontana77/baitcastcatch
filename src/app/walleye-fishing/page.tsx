@@ -59,7 +59,7 @@ export default function WalleyeFishingPage() {
               Walleye Fishing
             </h1>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
-              Most anglers fish midday and catch nothing. Walleye anglers know better. This guide explains why walleye are hard to catch and exactly how to fix that problem.
+              Walleye are hard to catch because most anglers fish at the wrong time of day. Once you understand why, the fix is simple. This guide covers the biology behind their feeding behavior, where they hold by season, and the three techniques that consistently put walleye in the boat.
             </p>
           </div>
         </section>
@@ -67,7 +67,7 @@ export default function WalleyeFishingPage() {
         {/* The Walleye Secret */}
         <section aria-label="Why walleye are hard to catch: the biology" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">The Real Reason Walleye Are Hard to Catch</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Understand Their Eyes — Then You Know When to Fish</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Walleye have a layer of cells behind their retina called a tapetum lucidum. This layer reflects light back through the retina, amplifying available light. The same structure is in cat eyes, and it is why both glow when a light hits them at night.
             </p>
@@ -92,7 +92,7 @@ export default function WalleyeFishingPage() {
         {/* Species Profile */}
         <section aria-label="Walleye species profile and identification" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Species Profile</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Know Your Target Before You Rig Up</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               The walleye (<em>Sander vitreus</em>) is olive to gold in color with a pale belly. The eyes are large and glassy. When a light hits a walleye's eye in the dark, the tapetum lucidum reflects a bright golden glow. This is how the fish got its name.
             </p>
@@ -108,7 +108,7 @@ export default function WalleyeFishingPage() {
         {/* Where They Live */}
         <section aria-label="Walleye habitat and major fisheries" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Great Lakes and Midwest Fisheries</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Where the Best Walleye Water Is in North America</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Lake Erie is the most productive walleye fishery in the world. The western basin of Lake Erie holds enormous populations of walleye and supports a major commercial fishing industry in addition to a massive sport fishery. Ohio, Michigan, Pennsylvania, and New York anglers all target Lake Erie walleye.
             </p>
@@ -127,7 +127,7 @@ export default function WalleyeFishingPage() {
         {/* Three Techniques */}
         <section aria-label="Three primary walleye fishing techniques" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Three Techniques That Catch Walleye</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Three Proven Setups That Put Walleye in the Boat</h2>
 
             <div className="space-y-8">
               <div>
@@ -172,7 +172,7 @@ export default function WalleyeFishingPage() {
         {/* Timing */}
         <section aria-label="Best time of day and seasonal timing for walleye" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">When to Fish</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Fish the Right Window — Timing Matters More Than Technique</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Time of day matters more for walleye than for almost any other fish. The single best adjustment most anglers can make is to start fishing at dusk and fish through the first hour of dark. Walleye move shallow at low light and feed aggressively.
             </p>
@@ -191,7 +191,7 @@ export default function WalleyeFishingPage() {
         {/* Edibility */}
         <section aria-label="Walleye as table fare" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">The Best-Eating Freshwater Fish in the Midwest</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Worth Eating: The Best Table Fish in the Midwest</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Walleye is widely considered the best-eating freshwater fish in North America among Midwesterners. The meat is white, firm, flaky, and has almost no fishy taste. It holds together well when cooked and does not fall apart in the pan.
             </p>
@@ -208,10 +208,10 @@ export default function WalleyeFishingPage() {
         <section aria-label="App download call to action" className="py-14 px-4 bg-white">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Log your walleye catches in BaitCastCatch.
+              Walleye are pattern fish. Log the details and the pattern reveals itself.
             </h2>
             <p className="text-gray-600 mb-6">
-              Track the time of day, water depth, technique, and water clarity for every fish. Build a personal data set that shows exactly when and how walleye feed on your home water. Free download, no subscription.
+              Record time of day, water depth, technique, and clarity for every walleye in BaitCastCatch. After one full season of entries, you know exactly when your home water turns on and what the fish respond to at each time of year — so you stop showing up at noon and leaving empty-handed. Free download, no subscription.
             </p>
             <Link
               href="/free-download"

@@ -59,7 +59,7 @@ export default function CrappieFishingPage() {
               Crappie Fishing
             </h1>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
-              Crappie are the most popular panfish in the US. Easy to find in spring. Great to eat. Light gear, simple techniques, and one of the best entry points in freshwater fishing.
+              Crappie are the most popular panfish in the US, and for good reason. They are predictable in spring, respond to simple techniques, and taste excellent. This guide covers where they hold, when they bite, and how to catch them consistently — from first spawn through fall dock fishing.
             </p>
           </div>
         </section>
@@ -67,7 +67,7 @@ export default function CrappieFishingPage() {
         {/* Black vs. White Crappie */}
         <section aria-label="Black crappie vs white crappie identification" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Black Crappie vs. White Crappie</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Know Which Crappie You Are Targeting</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Two species of crappie live in US waters. Both are excellent tablefish. Both respond to the same basic techniques. The main differences come down to appearance and habitat preference.
             </p>
@@ -104,7 +104,7 @@ export default function CrappieFishingPage() {
         {/* Spawn Timing */}
         <section aria-label="Spring spawn timing and location" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Spring Spawn: The Best Time to Fish Crappie</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Hit the Spawn Window — Best Action of the Year</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               When water temperature reaches 55-65 degrees F, crappie move from deep open water to shallow areas to spawn. This happens from March through May depending on your location. Southern states see it in early March. Northern states may not hit spawn conditions until late April or May.
             </p>
@@ -130,7 +130,7 @@ export default function CrappieFishingPage() {
         {/* Dock Fishing */}
         <section aria-label="Dock fishing technique" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Dock Fishing: A Year-Round Technique</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Work the Docks and Find Crappie Year-Round</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               After spawn, crappie school up under docks and other overhead structure. Docks create shade. Shade attracts baitfish. Baitfish attract crappie. This pattern holds from June through October in most parts of the country.
             </p>
@@ -149,7 +149,7 @@ export default function CrappieFishingPage() {
         {/* Tube Jig vs. Live Minnow */}
         <section aria-label="Tube jigs vs live minnows for crappie" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Tube Jig vs. Live Minnow</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Pick the Right Bait for the Water Temperature</h2>
             <div className="grid sm:grid-cols-2 gap-5 mb-6">
               <div>
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Tube Jig</h3>
@@ -183,7 +183,7 @@ export default function CrappieFishingPage() {
         {/* Equipment */}
         <section aria-label="Gear and equipment recommendations" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Gear for Crappie Fishing</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Light Gear, Simple Setup — Under $40 and Ready to Fish</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Crappie fishing is one of the most accessible forms of freshwater fishing. You do not need expensive gear to catch a lot of fish.
             </p>
@@ -203,7 +203,7 @@ export default function CrappieFishingPage() {
         {/* Edibility */}
         <section aria-label="Eating crappie, flavor and preparation" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">On the Table</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Catch Them in the Morning, Eat Them by Dinner</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Crappie are among the best-eating freshwater fish in North America. The meat is white, firm, and flaky with a mild flavor that does not taste strongly fishy. Most anglers fillet crappie, dredge in seasoned cornmeal or flour, and fry in hot oil. The result is excellent.
             </p>
@@ -220,10 +220,10 @@ export default function CrappieFishingPage() {
         <section aria-label="App download call to action" className="py-14 px-4 bg-white">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Track your crappie catches in BaitCastCatch.
+              Crappie school tight. Log the spot and you will find them there again.
             </h2>
             <p className="text-gray-600 mb-6">
-              Log date, depth, water temp, and lure color. Find your patterns on the docks and coves you fish most. Free download, no subscription.
+              Record date, depth, water temp, and lure color in BaitCastCatch after each trip. Over a season you see exactly which docks and coves hold fish — and at what depth and water temp they bite. Next spring you are not starting over. You already know where to go. Free download, no subscription.
             </p>
             <Link
               href="/free-download"

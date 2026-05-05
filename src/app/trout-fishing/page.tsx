@@ -59,7 +59,7 @@ export default function TroutFishingPage() {
               Trout Fishing
             </h1>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
-              Three main species. Two very different situations: stocked hatchery fish and wild trout. Each needs a different approach. This guide covers both.
+              Stocked trout and wild trout need completely different approaches. Most anglers treat them the same and catch far fewer fish than they should. This guide breaks down the three main species and the right technique for each situation — so you spend more time catching and less time wondering why nothing is biting.
             </p>
           </div>
         </section>
@@ -67,7 +67,7 @@ export default function TroutFishingPage() {
         {/* Three Main Species */}
         <section aria-label="Three main trout species in the United States" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">The Three Main US Trout Species</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-8">Know Which Trout You Are After Before You Rig Up</h2>
 
             <div className="space-y-10">
               <div>
@@ -121,7 +121,7 @@ export default function TroutFishingPage() {
         {/* Stocked vs. Wild */}
         <section aria-label="Stocked trout vs wild trout differences" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Stocked Trout vs. Wild Trout</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Match Your Approach to the Fish in Front of You</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               The two situations call for different approaches. Treating them the same is the most common mistake new trout anglers make.
             </p>
@@ -158,7 +158,7 @@ export default function TroutFishingPage() {
         {/* PowerBait */}
         <section aria-label="PowerBait setup for stocked trout" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">PowerBait for Stocked Trout: Step by Step</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Catch More Stocked Trout with the Right Setup</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               PowerBait is a floating dough bait from Berkley. It works specifically on hatchery trout because those fish were raised on floating pellets. They are conditioned to eat food that floats, and PowerBait mimics exactly that.
             </p>
@@ -193,7 +193,7 @@ export default function TroutFishingPage() {
         {/* Catch and Release */}
         <section aria-label="Catch and release best practices for wild trout" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Catch-and-Release Best Practices for Wild Trout</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Release Wild Trout Right — Keep the Fishery Healthy</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Wild trout populations are fragile. Many wild trout streams have catch-and-release regulations for good reason. Even on waters without that rule, releasing wild fish protects the resource and keeps quality fishing available.
             </p>
@@ -211,7 +211,7 @@ export default function TroutFishingPage() {
         {/* Regulations */}
         <section aria-label="Trout regulations and stream rules" className="py-14 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Regulations: Read Before You Fish</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Fish Legal: Trout Rules Vary by Stream, Not Just State</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Trout fishing regulations are more complex than bass or panfish rules. Many waters have special restrictions beyond the standard statewide license and bag limit.
             </p>
@@ -231,10 +231,10 @@ export default function TroutFishingPage() {
         <section aria-label="App download call to action" className="py-14 px-4" style={{ backgroundColor: '#EFF6FF' }}>
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Log your trout catches in BaitCastCatch.
+              Trout fishing rewards anglers who pay attention to details.
             </h2>
             <p className="text-gray-600 mb-6">
-              Track species, method, water temp, and stream conditions for every outing. Find out which water and which technique works best for you. Free download, no subscription.
+              Log species, method, water temp, and stream conditions for every outing in BaitCastCatch. Over a season you see exactly which water holds fish and which presentations work in each condition — so you walk into your next stretch of stream with confidence, not a guess. Free download, no subscription.
             </p>
             <Link
               href="/free-download"
