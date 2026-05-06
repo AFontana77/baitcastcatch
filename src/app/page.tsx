@@ -116,9 +116,7 @@ export default function HomePage() {
                     textTransform: 'uppercase',
                     borderRadius: 'var(--radius)',
                   }}
-                  className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-colors min-h-[48px] hover:opacity-90"
-                  onMouseOver={(e) => (e.currentTarget.style.background = 'oklch(0.34 0.20 255)')}
-                  onMouseOut={(e) => (e.currentTarget.style.background = 'oklch(0.43 0.22 255)')}
+                  className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-opacity min-h-[48px] hover:opacity-90"
                 >
                   Browse the Library →
                 </Link>
@@ -345,9 +343,7 @@ export default function HomePage() {
                   textTransform: 'uppercase',
                   borderRadius: 'var(--radius)',
                 }}
-                className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-colors min-h-[48px] hover:opacity-90"
-                onMouseOver={(e) => (e.currentTarget.style.background = 'oklch(0.34 0.20 255)')}
-                onMouseOut={(e) => (e.currentTarget.style.background = 'oklch(0.43 0.22 255)')}
+                className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-opacity min-h-[48px] hover:opacity-90"
               >
                 Get the Free PDF
               </Link>
