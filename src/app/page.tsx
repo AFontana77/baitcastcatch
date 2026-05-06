@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { SiteNav } from '@/components/layout/SiteNav';
 import { SiteFooter } from '@/components/layout/SiteFooter';
-import { Database, BookOpen, BarChart3, Star, ArrowRight, Download, CheckCircle } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,11 +8,37 @@ export const metadata: Metadata = {
   description: "FishLog has 375 fish species from FishBase and NOAA with size limits, habitat, and state regulation links. Log your catches, track your best fish, and build a record book worth keeping.",
 };
 
+const SAMPLE_SPECIES = [
+  { name: "Largemouth Bass", type: "Freshwater", limit: "12–14 in." },
+  { name: "Walleye", type: "Freshwater", limit: "15 in." },
+  { name: "Channel Catfish", type: "Freshwater", limit: "12 in." },
+  { name: "Crappie", type: "Freshwater", limit: "9 in." },
+  { name: "Bluegill", type: "Freshwater", limit: "7 in." },
+];
+
 const FEATURES = [
-  { icon: Database, title: "Species database", body: "375 fish species with habitat, size limits, and regulation links." },
-  { icon: BookOpen, title: "Catch log", body: "Log species, weight, length, location, and time. Add a photo. Rate the fight." },
-  { icon: BarChart3, title: "Personal records", body: "Your biggest fish by species — updated every time you log a new catch." },
-  { icon: Star, title: "GPS location", body: "Pin exact spots. See your catch history on a map." },
+  {
+    label: "Species database",
+    desc: "375 fish from FishBase and NOAA. Habitat, typical size range, and state regulation links for each one.",
+  },
+  {
+    label: "Catch log",
+    desc: "Species, weight, length, location, and time. Add a photo. Rate the fight. Every catch deserves a record.",
+  },
+  {
+    label: "Personal records",
+    desc: "Your biggest fish by species, updated every time you log. See your bests in one place.",
+  },
+  {
+    label: "GPS location",
+    desc: "Pin exact spots. See your catch history on a map. Find the good holes again.",
+  },
+];
+
+const STATS = [
+  { num: "375", label: "fish species" },
+  { num: "50", label: "states covered" },
+  { num: "$0", label: "cost to start" },
 ];
 
 export default function HomePage() {
@@ -41,73 +66,304 @@ export default function HomePage() {
       <SiteNav />
       <main id="main-content" className="pt-20">
 
-        {/* Hero */}
-        <section className="py-20 px-4" style={{ backgroundColor: '#EFF6FF' }}>
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-blue-700 bg-blue-50 px-3 py-1 rounded-full mb-6">
-              Search 375 fish species. Log your own.
-            </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Search 375 fish species with size limits and regulations.
-              <br />
-              <span className="text-blue-800">Log your catches.</span>
-            </h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-              FishLog combines FishBase and NOAA species data with a personal catch log. Search any fish by name, find its habitat and typical size range, check size limits, and log your own catches with notes and location. Every fish deserves a record.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href="/library" className="inline-flex items-center justify-center gap-2 bg-blue-700 text-white font-semibold px-8 py-3 rounded-xl hover:bg-blue-800 transition-colors press-feedback min-h-[48px]">
-                Browse the FishLog Library <ArrowRight size={18} />
-              </Link>
-              <Link href="/free-download" className="inline-flex items-center justify-center gap-2 border border-gray-300 text-gray-700 font-medium px-8 py-3 rounded-xl hover:bg-gray-50 transition-colors min-h-[48px]">
-                <Download size={18} /> Free Download
-              </Link>
+        {/* Section 1: Hero — split layout, text left, data table right */}
+        <section
+          style={{ background: 'oklch(0.95 0.010 240)' }}
+          className="pt-32 pb-20 px-6"
+        >
+          <div className="max-w-6xl mx-auto grid lg:grid-cols-[1fr_1fr] gap-12 items-start">
+
+            {/* Left: text */}
+            <div>
+              <span
+                style={{
+                  color: 'oklch(0.43 0.22 255)',
+                  fontFamily: 'var(--font-display)',
+                  letterSpacing: '0.15em',
+                }}
+                className="text-sm font-semibold uppercase mb-6 block"
+              >
+                FishBase · NOAA · 375 Species
+              </span>
+              <h1
+                style={{
+                  fontFamily: 'var(--font-display)',
+                  color: 'oklch(0.15 0.025 240)',
+                  lineHeight: 1.0,
+                }}
+                className="text-6xl sm:text-7xl lg:text-8xl font-bold uppercase mb-6"
+              >
+                KNOW YOUR FISH.<br />LOG YOUR CATCH.
+              </h1>
+              <p
+                style={{
+                  color: 'oklch(0.35 0.020 240)',
+                  maxWidth: '44ch',
+                  fontFamily: 'var(--font-body)',
+                }}
+                className="text-base leading-relaxed mb-8"
+              >
+                FishLog has 375 species from FishBase and NOAA. Size limits. Habitat. State regulation links. Search any fish before you cast. Log every catch after. Build a record book worth keeping.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/library"
+                  style={{
+                    background: 'oklch(0.43 0.22 255)',
+                    color: 'oklch(0.99 0 0)',
+                    fontFamily: 'var(--font-display)',
+                    letterSpacing: '0.05em',
+                    textTransform: 'uppercase',
+                    borderRadius: 'var(--radius)',
+                  }}
+                  className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-colors min-h-[48px] hover:opacity-90"
+                  onMouseOver={(e) => (e.currentTarget.style.background = 'oklch(0.34 0.20 255)')}
+                  onMouseOut={(e) => (e.currentTarget.style.background = 'oklch(0.43 0.22 255)')}
+                >
+                  Browse the Library →
+                </Link>
+                <Link
+                  href="/free-download"
+                  style={{
+                    border: '1px solid oklch(0.84 0.020 240)',
+                    color: 'oklch(0.43 0.22 255)',
+                    fontFamily: 'var(--font-display)',
+                    letterSpacing: '0.05em',
+                    textTransform: 'uppercase',
+                    borderRadius: 'var(--radius)',
+                    background: 'transparent',
+                  }}
+                  className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-colors min-h-[48px]"
+                >
+                  Free Reference Sheet
+                </Link>
+              </div>
+              <p
+                style={{ color: 'oklch(0.55 0.018 240)', fontFamily: 'var(--font-body)' }}
+                className="mt-4 text-sm"
+              >
+                Free app. No subscription. iOS and Android.
+              </p>
             </div>
-            <p className="mt-4 text-sm text-gray-400">
-              Free app. No credit card. 375 fish species from FishBase + NOAA.
-            </p>
+
+            {/* Right: sample data table preview */}
+            <div
+              style={{
+                background: 'oklch(0.99 0.005 240)',
+                border: '1px solid oklch(0.84 0.020 240)',
+                borderRadius: '0.375rem',
+                overflow: 'hidden',
+              }}
+            >
+              {/* Table header */}
+              <div
+                style={{
+                  background: 'oklch(0.92 0.015 240)',
+                  borderBottom: '1px solid oklch(0.84 0.020 240)',
+                  padding: '0.75rem 1rem',
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: 'var(--font-display)',
+                    color: 'oklch(0.43 0.22 255)',
+                    letterSpacing: '0.1em',
+                  }}
+                  className="text-xs font-semibold uppercase"
+                >
+                  Sample entries
+                </span>
+              </div>
+
+              {/* Species rows */}
+              {SAMPLE_SPECIES.map((s, i) => (
+                <div
+                  key={s.name}
+                  style={{
+                    padding: '0.75rem 1rem',
+                    borderBottom: i < SAMPLE_SPECIES.length - 1 ? '1px solid oklch(0.84 0.020 240)' : 'none',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                  }}
+                >
+                  <div>
+                    <div
+                      style={{
+                        fontFamily: 'var(--font-body)',
+                        color: 'oklch(0.15 0.025 240)',
+                        fontWeight: 600,
+                      }}
+                      className="text-sm"
+                    >
+                      {s.name}
+                    </div>
+                    <div style={{ color: 'oklch(0.55 0.018 240)' }} className="text-xs">
+                      {s.type}
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      fontFamily: 'var(--font-display)',
+                      color: 'oklch(0.43 0.22 255)',
+                      letterSpacing: '0.05em',
+                    }}
+                    className="text-sm font-medium"
+                  >
+                    {s.limit}
+                  </div>
+                </div>
+              ))}
+
+              {/* Footer link */}
+              <div style={{ padding: '0.75rem 1rem', borderTop: '1px solid oklch(0.84 0.020 240)' }}>
+                <Link
+                  href="/library"
+                  style={{ color: 'oklch(0.43 0.22 255)', fontFamily: 'var(--font-body)' }}
+                  className="text-xs font-semibold"
+                >
+                  View all 375 species →
+                </Link>
+              </div>
+            </div>
+
           </div>
         </section>
 
-        {/* Database pitch */}
-        <section className="py-16 px-4 bg-white">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-              The database IS the app.
+        {/* Section 2: Stat strip */}
+        <section style={{ background: 'oklch(0.43 0.22 255)' }} className="py-12 px-6">
+          <div className="max-w-6xl mx-auto grid sm:grid-cols-3 gap-8 text-center">
+            {STATS.map((s) => (
+              <div key={s.label}>
+                <div
+                  style={{
+                    fontFamily: 'var(--font-display)',
+                    color: 'oklch(0.99 0 0)',
+                    lineHeight: 1,
+                  }}
+                  className="text-5xl font-bold"
+                >
+                  {s.num}
+                </div>
+                <div
+                  style={{ color: 'oklch(0.85 0.05 240)' }}
+                  className="text-sm mt-1 uppercase tracking-wider"
+                >
+                  {s.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Section 3: Feature list — horizontal rule rows, NO card grid */}
+        <section style={{ background: 'oklch(0.99 0.005 240)' }} className="py-20 px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2
+              style={{
+                fontFamily: 'var(--font-display)',
+                color: 'oklch(0.15 0.025 240)',
+                maxWidth: '22ch',
+                lineHeight: 1.1,
+              }}
+              className="text-4xl sm:text-5xl font-bold uppercase mb-12"
+            >
+              WHAT THE DATABASE GIVES YOU
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-              Most log apps give you a blank screen. FishLog gives you 375 fish species from FishBase + NOAA — searchable, organized, and ready to use. Log what you do. Build your personal collection alongside the reference library.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-6 text-left">
-              {FEATURES.map(({ icon: Icon, title, body }) => (
-                <div key={title} className="flex gap-4 p-5 rounded-xl bg-gray-50 card-hover">
-                  <div className="flex-shrink-0 h-10 w-10 rounded-lg bg-blue-50 flex items-center justify-center">
-                    <Icon className="h-5 w-5 text-blue-700" aria-hidden="true" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">{title}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">{body}</p>
-                  </div>
+            <div>
+              {FEATURES.map((f, i) => (
+                <div
+                  key={f.label}
+                  style={{
+                    borderTop: '1px solid oklch(0.84 0.020 240)',
+                    borderBottom: i === FEATURES.length - 1 ? '1px solid oklch(0.84 0.020 240)' : 'none',
+                  }}
+                  className="py-6 grid sm:grid-cols-[220px_1fr] gap-4"
+                >
+                  <span
+                    style={{
+                      fontFamily: 'var(--font-display)',
+                      color: 'oklch(0.43 0.22 255)',
+                      letterSpacing: '0.05em',
+                    }}
+                    className="text-base font-semibold uppercase"
+                  >
+                    {f.label}
+                  </span>
+                  <p
+                    style={{
+                      color: 'oklch(0.35 0.020 240)',
+                      fontFamily: 'var(--font-body)',
+                    }}
+                    className="text-base leading-relaxed"
+                  >
+                    {f.desc}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* CTA Banner */}
-        <section className="py-16 px-4 bg-blue-50">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-              Get the free download first.
+        {/* Section 4: CTA */}
+        <section
+          style={{
+            background: 'oklch(0.92 0.015 240)',
+            borderTop: '1px solid oklch(0.84 0.020 240)',
+          }}
+          className="py-20 px-6"
+        >
+          <div className="max-w-3xl mx-auto">
+            <h2
+              style={{
+                fontFamily: 'var(--font-display)',
+                color: 'oklch(0.15 0.025 240)',
+                lineHeight: 1.0,
+              }}
+              className="text-5xl font-bold uppercase mb-4"
+            >
+              START WITH THE PDF.
             </h2>
-            <p className="text-gray-600 mb-6">
-              Start with the printable reference sheet. Use it today, no app required. When you want the searchable database and log, get the app free.
+            <p
+              style={{
+                color: 'oklch(0.35 0.020 240)',
+                maxWidth: '44ch',
+                fontFamily: 'var(--font-body)',
+              }}
+              className="text-lg mb-8"
+            >
+              Get the printable reference sheet today. No app needed. When you want the full searchable database and catch log, download the app free.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href="/free-download" className="inline-flex items-center justify-center gap-2 bg-blue-700 text-white font-semibold px-8 py-3 rounded-xl hover:bg-blue-800 transition-colors press-feedback min-h-[48px]">
-                <Download size={18} /> Get the Free PDF
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/free-download"
+                style={{
+                  background: 'oklch(0.43 0.22 255)',
+                  color: 'oklch(0.99 0 0)',
+                  fontFamily: 'var(--font-display)',
+                  letterSpacing: '0.05em',
+                  textTransform: 'uppercase',
+                  borderRadius: 'var(--radius)',
+                }}
+                className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-colors min-h-[48px] hover:opacity-90"
+                onMouseOver={(e) => (e.currentTarget.style.background = 'oklch(0.34 0.20 255)')}
+                onMouseOut={(e) => (e.currentTarget.style.background = 'oklch(0.43 0.22 255)')}
+              >
+                Get the Free PDF
               </Link>
-              <Link href="/library" className="inline-flex items-center justify-center gap-2 border border-blue-200 text-blue-800 font-medium px-8 py-3 rounded-xl hover:bg-blue-50 transition-colors min-h-[48px]">
+              <Link
+                href="/library"
+                style={{
+                  border: '1px solid oklch(0.84 0.020 240)',
+                  color: 'oklch(0.43 0.22 255)',
+                  fontFamily: 'var(--font-display)',
+                  letterSpacing: '0.05em',
+                  textTransform: 'uppercase',
+                  borderRadius: 'var(--radius)',
+                  background: 'transparent',
+                }}
+                className="inline-flex items-center justify-center gap-2 px-8 py-3 font-semibold transition-colors min-h-[48px]"
+              >
                 Browse the Library
               </Link>
             </div>
