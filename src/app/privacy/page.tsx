@@ -76,7 +76,14 @@ export default function PrivacyPage() {
               Continued use of the app after changes constitutes acceptance of the updated policy.
             </p>
 
-            <h2 className="text-xl font-semibold mt-10 mb-3" style={{ color: fg, fontFamily: 'var(--font-display)' }}>8. Contact</h2>
+            <h2 className="text-xl font-semibold mt-10 mb-3" style={{ color: fg, fontFamily: 'var(--font-display)' }}>8. Email you give us on this website</h2>
+
+            <p
+              className="text-xs font-semibold uppercase mb-6"
+              style={{ color: accent, letterSpacing: '0.18em', fontFamily: 'var(--font-display)' }}
+            >If you enter your email address in a signup form on this website, we store it so we can send you the updates you asked for. We also record which page you signed up from and when you gave consent. We use Resend to send and manage that mail. We do not sell your address, and every email has an unsubscribe link. This is separate from anything described above: your email address is not linked to any other data on this site or in any of our apps.</p>
+
+            <h2 className="text-xl font-semibold mt-10 mb-3" style={{ color: fg, fontFamily: 'var(--font-display)' }}>9. Contact</h2>
             <p className="leading-relaxed" style={{ color: muted }}>
               Questions about this policy? Email{' '}
               <a href="mailto:support@baitcastcatch.com" style={{ color: accent }} className="hover:underline">support@baitcastcatch.com</a>.
