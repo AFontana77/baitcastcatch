@@ -4,6 +4,7 @@ import { SiteNav } from '@/components/layout/SiteNav';
 import { SiteFooter } from '@/components/layout/SiteFooter';
 import { getAllFish, getFishByCategory, toSlug, type FishItem } from '@/lib/items';
 import type { Metadata } from 'next';
+import { amazonSearch } from "@/lib/affiliateLinks";
 
 // ── Static params ─────────────────────────────────────────────────────────────
 
@@ -356,9 +357,9 @@ export default async function FishDetailPage({
                 Find rods, reels, lures, and tackle for {item.name} fishing on Amazon.
               </p>
               <a
-                href={`https://www.amazon.com/s?k=${encodeURIComponent(item.name + ' fishing gear')}`}
+                href={amazonSearch(item.name + ' fishing gear')}
                 target="_blank"
-                rel="noopener noreferrer sponsored"
+                rel="nofollow noopener noreferrer sponsored"
                 className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm min-h-[44px]"
               >
                 Shop {item.name} gear on Amazon →

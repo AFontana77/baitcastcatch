@@ -72,3 +72,19 @@ export function affiliateLinkProps(
     "data-affiliate-network": program?.network ?? "unknown",
   };
 }
+
+
+/**
+ * Tagged Amazon search for a species' gear.
+ *
+ * This property rendered Amazon commerce on 391 pages with NO tag at all - one
+ * template line emitted a bare /s?k= URL, so every click earned nothing. The
+ * Associates tracking ID baitcastcatch-20 was created in Associates Central on
+ * 2026-08-30 under the existing approved account and verified against the
+ * Creators API with a known-live control ASIN before being wired here.
+ */
+export const AMAZON_TAG = "baitcastcatch-20";
+
+export function amazonSearch(query: string): string {
+  return `https://www.amazon.com/s?k=${encodeURIComponent(query)}&tag=${AMAZON_TAG}`;
+}
