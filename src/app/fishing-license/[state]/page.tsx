@@ -16,9 +16,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { state: string };
+  params: Promise<{ state: string }>;
 }): Promise<Metadata> {
-  const license = stateLicenses.find((s) => s.slug === params.state);
+  const { state } = await params;
+  const license = stateLicenses.find((s) => s.slug === state);
   if (!license) return {};
 
   return {
@@ -32,12 +33,16 @@ export async function generateMetadata({
 
 // ── Page ──────────────────────────────────────────────────────────────────────
 
-export default function StateLicensePage({
+export default async function StateLicensePage({
   params,
 }: {
-  params: { state: string };
+  params: Promise<{ state: string }>;
 }) {
-  const license = stateLicenses.find((s) => s.slug === params.state);
+  // params is a Promise in Next 15+. Reading .state off the un-awaited Promise
+  // yielded undefined, so every one of these 10 pages called notFound() and
+  // served a 404 while still sitting in the sitemap.
+  const { state } = await params;
+  const license = stateLicenses.find((s) => s.slug === state);
   if (!license) notFound();
 
   return (
