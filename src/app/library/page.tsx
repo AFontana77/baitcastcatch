@@ -7,6 +7,7 @@ import type { Metadata } from 'next';
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/library" },
   title: 'FishLog Library — 375 Fish Species',
   description:
     'Species data from FishBase and NOAA — habitat, typical size ranges, and state regulation links for US waters. Browse the FishLog reference database — available in the free app.',

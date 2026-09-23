@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/layout/SiteFooter';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/walleye-fishing" },
   title: 'Walleye Fishing — Why They\'re Hard to Catch & How to Fix It | BaitCastCatch',
   description:
     "The walleye fishing guide: the biology behind their low-light feeding behavior, the Lindy rig, jig-and-minnow technique, Great Lakes populations, size limits, and why walleye are the most sought-after eating fish in the Midwest.",

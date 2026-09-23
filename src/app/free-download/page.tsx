@@ -4,6 +4,7 @@ import { EmailCaptureForm } from '@/components/EmailCaptureForm';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/free-download" },
   title: "Free Fishing Trip Log Sheet",
   description: "A printable one-day trip log — species, size, location, bait, weather, and notes for up to 12 catches. Free printable from FishLog — no signup required.",
 };

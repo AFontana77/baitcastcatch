@@ -36,7 +36,9 @@ export const metadata: Metadata = {
     description: "FishLog has 375+ fish species from FishBase and NOAA with size limits, habitat, and state regulation links. Log your catches, track your best fish, and build a record book worth keeping.",
     images: ["/og-image.png"],
   },
-  alternates: { canonical: SITE_URL },
+  // Removed: a canonical here is inherited by every page that does not
+  // override it, which told search engines each page was a duplicate of
+  // the homepage. Each route now declares its own.
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
     apple: "/icons/icon-192.png",

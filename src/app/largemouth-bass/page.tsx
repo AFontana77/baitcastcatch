@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/layout/SiteFooter';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/largemouth-bass" },
   title: 'Largemouth Bass — Species Guide, World Record & Fishing Tips | BaitCastCatch',
   description:
     'Everything about largemouth bass: world record (22 lbs 4 oz), habitat, seasonal feeding patterns, best baits and lures by season, and how to tell largemouth from smallmouth.',

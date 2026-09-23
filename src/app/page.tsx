@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/layout/SiteFooter';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/" },
   title: "FishLog — Search 375 fish species with size limits and regulations",
   description: "FishLog has 375 fish species from FishBase and NOAA with size limits, habitat, and state regulation links. Log your catches, track your best fish, and build a record book worth keeping.",
 };

@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/layout/SiteFooter';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/striped-bass" },
   title: 'Striped Bass — Coastal vs. Landlocked, World Record & Fishing Guide | BaitCastCatch',
   description:
     'The striped bass guide: anadromous biology, Hudson River and Chesapeake Bay runs, landlocked striper in freshwater reservoirs, world record (81 lbs 14 oz), and size limit overview.',

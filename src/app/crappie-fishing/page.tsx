@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/layout/SiteFooter';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/crappie-fishing" },
   title: 'Crappie Fishing — Spring Spawning, Best Baits & Techniques | BaitCastCatch',
   description:
     'The crappie fishing guide: black vs. white crappie, spring spawn timing (water hits 55-65°F), dock fishing technique, tube jigs vs. live minnows, and size limit overview.',

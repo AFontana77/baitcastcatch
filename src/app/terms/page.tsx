@@ -3,6 +3,7 @@ import { SiteFooter } from '@/components/layout/SiteFooter';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/terms" },
   title: 'Terms of Service — BaitCastCatch',
   description: 'Terms of service for the BaitCastCatch mobile application and baitcastcatch.com website.',
 };

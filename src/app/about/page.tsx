@@ -4,6 +4,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About FishLog",
   description: "The story behind FishLog. Search 375+ fish species with size limits and regulations. Log your catches. Build your fishing log.",
 };

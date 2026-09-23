@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/layout/SiteFooter';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/smallmouth-bass" },
   title: 'Smallmouth Bass — Species Guide, Record & Fishing Techniques | BaitCastCatch',
   description:
     'The complete smallmouth bass guide: world record (11 lbs 15 oz), river vs. lake habitat, seasonal patterns, and the techniques that catch the hardest-fighting bass pound for pound.',

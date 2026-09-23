@@ -4,6 +4,7 @@ import { Mail } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/support" },
   title: 'Support — FishLog',
   description: 'Get help with the FishLog app. Contact support or browse common questions.',
 };

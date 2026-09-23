@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/layout/SiteFooter';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/trout-fishing" },
   title: 'Trout Fishing — Rainbow, Brown & Brook Trout Guide | BaitCastCatch',
   description:
     'The trout fishing guide: three main US species (rainbow, brown, brook), stocked vs. wild trout differences, PowerBait for hatchery fish, catch-and-release best practices, and regulation overview.',

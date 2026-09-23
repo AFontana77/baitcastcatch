@@ -3,6 +3,7 @@ import { SiteFooter } from '@/components/layout/SiteFooter';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/privacy" },
   title: 'Privacy Policy — BaitCastCatch',
   description: 'Privacy policy for the BaitCastCatch mobile application and baitcastcatch.com website.',
 };
